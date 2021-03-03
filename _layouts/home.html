@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+{%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+{%- if site.posts.size > 0 -%}
+  <ul class="posts">
+    <li class="posts-labelgroup" id="posts-labelgroup">
+      <h1 id="posts-label">posts</h1>
+      {% if site.plainwhite.search %}
+      <div class="search-container">
+        <div class="search-section">
+          <i class="icon-search"></i>
+          <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in posts">
+        </div>
+        <div class="search-results" id="search-results" data-placeholder="No Results" style="display: none;"></div>
+      </div>
+      {% endif %}
+    </li>
+
+    <h2> ABOUT </h2>
+    <p> I'm UX researcher at KIST, Seoul, South Korea. I am interested in Explainable AI in Human-Computer Interaction and trustworthiness of AI system.  
+    </p>
+
+    <p>My research goal is building ~~ system with building ~ interactive system based on AI. 
+    </p>
+
+    <br>
+    <br>
+
+    <h2>EDUCATION</h2>
+
+    <h4 id=education> Visiting Student in Language Technologies Institute (LTI)</h4>
+    <p id=school>Carneige Mellon University @ Pittsburgh, USA - Aug.2019 to Feb.2020 <br>
+       Intensive Artificial Intelligence Program, funded by Institute for Information & Communications Technology Planning & Evaluation (IITP)
+
+    </p>
+
+    <h4 id=education> M.S. in Interaction Science</h4>
+    <p id=school>Sungkyunkwan University @ Seoul, Republic of Korea - Sep.2018 to Aug.2020</p>
+    
+    <h4 id=education>B.S. in Industrial Management and Engineering & Applied Mathematics</h4>
+    <p id=school>Hanyang University @ Ansan, Republic of Korea - Mar.2014 to Aug.2018</p>
+
+
+    <br><br>
+
+
+
+    <h2>PUBLICATION</h2>
+    {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
+        <!-- <a class="post-link" href="{{ post.url | relative_url }}"> -->
+          <!-- <h4 class="post-title">{{ post.title | escape }}</h4> -->
+          <!-- <p class="post-title">{{ post.title | escape }}</p> -->
+          <p class="publication_content"><span style="color:#2471A3;"><b>Can AI be a content generator? Effects of content generators and information delivery methods on the psychology of content consumers.</b></span><br>
+          Kim, J., <strong>Shin, S.</strong>, Bae, K., Oh, S., Park, E., & del Pobil, A. P. (2020) <br>
+          <em>Telematics and Informatics, 55, 101452.</em>
+          </p>
+        <!-- </a> -->
+
+<!--         <div class="post">
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </div> -->
+
+        <!-- <div class="post-meta"> -->
+          <!-- <div class="post-date"> -->
+            <!-- <i class="icon-calendar"></i> -->
+            <!-- {{ post.date | date: date_format }} -->
+          <!-- </div> -->
+          <!-- {%- if post.categories.size > 0-%}
+          <ul class="post-categories">
+            {%- for tag in post.categories -%}
+            <li>{{ tag }}</li>
+            {%- endfor -%}
+          </ul>
+          {%- endif -%}
+        </div> -->
+      </li>
+
+      <li>
+          <p class="publication_content"><span style="color:#2471A3;"><strong>반 사실적 설명을 사용한 인공지능 시스템 설명 인터페이스 개발</strong></span><br>
+          <strong>신소연</strong>, 김상연, 이상원. (2020) <br>
+          <em>정보화연구 (구 정보기술 아키텍처 연구), 17(1), 63-71.</em>
+          </p>
+      </li>     
+
+      <li>
+          <p class="publication_content"><span style="color:#2471A3;"><strong>사용자 예상과 인공지능 결과의 일치 여부가 시스템에 대한 신뢰도 인지에 미치는 영향</strong></span><br>
+          <b>신소연</b>, 이상원.<br>
+          <em>대한인간공학회 춘계학술대회, 제주, 2019년 5월 15일-18일. (발표)</em>
+          </p>
+      </li>   
+    {%- endfor -%}
+
+
+    <br><br>
+
+
+    <h2>PROJECT</h2>
+    <p class="post-title"> ㈜ 브이젠 태양광 및 풍력 발전기 O&M 비용산정 모델 및 툴 UX 개발 자문 </p>
+
+
+
+  </ul>
+
+  <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
+		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+	</svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> -->
+{%- endif -%}

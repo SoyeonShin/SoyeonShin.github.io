@@ -2,15 +2,15 @@ url     : "https://soyeonshin.github.io/" # the base hostname & protocol for you
 baseurl : "" # the subpath of your site, e.g. "/blog"
 
 
-future: true
-title: Soyeon Shin
-author: GitHub User
+title: Soyeon Shin Blog
+author: Soyeon Shin
 email: shinsy995 at gmail dot com
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 show_excerpts: true # set to true to show excerpts on the homepage
+future: true
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this

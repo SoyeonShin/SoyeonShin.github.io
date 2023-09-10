@@ -34,6 +34,19 @@ layout: default
     <br>
     <br>
 
+    <h2>EXPERIENCE</h2>
+    <h4 id=education> UX Researcher @ LG Electronics </h4>
+    <p id=school>Specialist / Product/UX Evaluation Team [Jan. 2023 - now]
+    </p>
+
+
+    <h4 id=education> UX Researcher @ Korea Institute of Science and Technology (KIST) </h4>
+    <p id=school>Intern / Center for Intelligent and Interactive Robotics [Mar. 2021 - Dec.2022]
+    </p>
+
+
+    <br><br>
+
     <h2>EDUCATION</h2>
 
     <h4 id=education> Visiting Student in Language Technologies Institute (LTI)</h4>
@@ -54,37 +67,42 @@ layout: default
 
 
     <h2>PUBLICATION</h2>
-    {%- for post in site.posts -%}
+
       <li>
-        {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-        <!-- <a class="post-link" href="{{ post.url | relative_url }}"> -->
-          <!-- <h4 class="post-title">{{ post.title | escape }}</h4> -->
-          <!-- <p class="post-title">{{ post.title | escape }}</p> -->
+          <p class="publication_content"><span style="color:#2471A3;"><strong>
+          Heterogeneous Robot-assisted Services in Isolation Wards: A System Development and Usability Study (Accepted) </strong></span><br>
+          Youngsun Kwon, <strong>Soyeon Shin</strong>, kyon-mo yang, Seongah Park, Soomin Shin, Hwawoo Jeon, Kijung Kim, Guhnoo Yun, SANG YONG PARK, Jeewon BYUN, Sang Hoon Kang, Kyoung-Ho SONG, Doik Kim, Dong Hwan Kim, Kap-Ho Seo, Sonya Sona Kwak, Yoonseob Lim  (2023) <br>
+          <em>2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>
+          </p>
+      </li> 
+
+      <li>
+          <p class="publication_content"><span style="color:#2471A3;"><strong>
+          Connecting without Reaching: How Voice-Cloned Robot Can Enhance Mental Health of Isolated People During a Pandemic.</strong></span><br>
+          Kim, J. <strong>Shin, S.</strong>, Kang, D., Lim, Y., & Kwak, S. S.  (2023) <br>
+          <em>32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN) August 28-31, 2023, Busan, Korea.</em>
+          </p>
+      </li> 
+
+      <li>
+          <p class="publication_content"><span style="color:#2471A3;"><strong>Telepresence Robot for Isolated Patients in the COVID-19 Pandemic: Effects of Socio-relationship and Telecommunication Device Types on Patients’ Acceptance of Robots.</strong></span><br>
+          <strong>Shin, S.</strong>, Kang, D., & Kwak, S. S.  (2022) <br>
+          <em>International Conference on Social Robotics</em> (pp. 263-276)
+          </p>
+      </li> 
+
+      <li>
+          <p class="publication_content"><span style="color:#2471A3;"><strong>반 사실적 설명을 사용한 인공지능 시스템 설명 인터페이스 개발</strong></span><br>
+          <strong>신소연</strong>, 김상연, 이상원. (2020) <br>
+          <em>정보화연구 (구 정보기술 아키텍처 연구), 17(1), 63-71.</em>
+          </p>
+      </li>  
+
+      <li>
           <p class="publication_content"><span style="color:#2471A3;"><b>Can AI be a content generator? Effects of content generators and information delivery methods on the psychology of content consumers.</b></span><br>
           Kim, J., <strong>Shin, S.</strong>, Bae, K., Oh, S., Park, E., & del Pobil, A. P. (2020) <br>
           <em>Telematics and Informatics, 55, 101452.</em>
           </p>
-        <!-- </a> -->
-
-<!--         <div class="post">
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
-        </div> -->
-
-        <!-- <div class="post-meta"> -->
-          <!-- <div class="post-date"> -->
-            <!-- <i class="icon-calendar"></i> -->
-            <!-- {{ post.date | date: date_format }} -->
-          <!-- </div> -->
-          <!-- {%- if post.categories.size > 0-%}
-          <ul class="post-categories">
-            {%- for tag in post.categories -%}
-            <li>{{ tag }}</li>
-            {%- endfor -%}
-          </ul>
-          {%- endif -%}
-        </div> -->
       </li>
 
       <li>
@@ -99,14 +117,15 @@ layout: default
           <b>신소연</b>, 이상원.<br>
           <em>대한인간공학회 춘계학술대회, 제주, 2019년 5월 15일-18일. (발표)</em>
           </p>
-      </li>   
-    {%- endfor -%}
+      </li> 
+
 
 
     <br><br>
 
 
     <h2>PROJECT</h2>
+
     <!-- <p class="post-title"> ㈜ 브이젠 태양광 및 풍력 발전기 O&M 비용산정 모델 및 툴 UX 개발 자문 </p> -->
     <p class="publication_content"><span style="color:#2471A3;"><strong>Designing User Interface and Design System for Virtual Power Plants</strong></span><br>
     VGEN Korea [Mar. 2020 - July. 2020]
@@ -117,8 +136,6 @@ layout: default
     </p> -->
 
 
-
-  </ul>
 
   <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
 		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>

@@ -2,6 +2,7 @@ url     : "https://soyeonshin.github.io/" # the base hostname & protocol for you
 baseurl : "" # the subpath of your site, e.g. "/blog"
 
 
+future: true
 title: Soyeon Shin
 author: GitHub User
 email: shinsy995 at gmail dot com
